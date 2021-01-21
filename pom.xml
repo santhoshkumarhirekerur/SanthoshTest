@@ -14,7 +14,7 @@
 		<tag>HEAD</tag>
 	</scm>
 	<groupId>com.anz</groupId>
-	<artifactId>SanthoshTest</artifactId>
+	<artifactId>santhoshtest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>SanthoshTest</name>
 	<description>Demo project for Spring Boot</description>
