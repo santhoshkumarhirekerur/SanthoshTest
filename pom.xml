@@ -55,12 +55,6 @@
 							<goal>revision</goal>
 						</goals>
 					</execution>
-					<execution>
-						<id>validate-the-git-infos</id>
-						<goals>
-							<goal>validateRevision</goal>
-						</goals>
-					</execution>
 				</executions>
 				<configuration>
 					<generateGitPropertiesFile>true</generateGitPropertiesFile>

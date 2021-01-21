@@ -2,6 +2,7 @@ package com.anz.my.model;
 
 public class GitInfo {
 	
+	
 	private  String version;
 	private  String lastcommitsha;
 	private  String description;
