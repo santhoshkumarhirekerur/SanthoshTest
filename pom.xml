@@ -99,7 +99,7 @@
 				<configuration>
 					<username>${project.groupId}</username>
 					<password>${env.DOCKER_HUB_TOKEN}</password>
-					<repository>registry.hub.docker.com/${project.groupId}/${project.artifactId}</repository>
+					<repository>registry.hub.docker.com/${project.groupId}/santhoshtest</repository>
 					<tag>${project.version}</tag>
 					<buildArgs>
 						<JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
