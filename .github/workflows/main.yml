@@ -24,16 +24,16 @@ jobs:
     - name: Checkout master branch
       run: git checkout master
     - name: Setup Maven settings.xml
-      uses: whelk-io/maven-settings-xml-action@v11
+      uses: s4u/maven-settings-action@v2.3.0
       with:
         servers: |
-            '[
-              {
-                "id": "docker.io",
-                "username": "santhoshhirekerur",
-                "password": ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
-              }
-            ]'
+          [
+            {
+              "id": "docker.io",
+              "username": "santhoshhirekerur",
+              "password": "${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}"
+            }
+          ]
     - name: Prepare release
       env:
         GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
