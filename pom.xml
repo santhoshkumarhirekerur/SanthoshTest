@@ -9,11 +9,11 @@
 	</parent>
 	<scm>
 		<developerConnection>scm:git:https://github.com/santhoshkumarhirekerur/SanthoshTest</developerConnection>
-		<tag>v0.0.13</tag>
+		<tag>HEAD</tag>
 	</scm>
 	<groupId>com.anz</groupId>
 	<artifactId>santhoshtest</artifactId>
-	<version>0.0.13</version>
+	<version>0.0.14-SNAPSHOT</version>
 	<name>SanthoshTest</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
