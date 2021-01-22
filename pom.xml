@@ -95,7 +95,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<username>${project.groupId}</username>
+					<username>santhoshhirekerur</username>
 					<password>${env.DOCKER_HUB_TOKEN}</password>
 					<repository>santhoshhirekerur/com.anz-santhoshtest</repository>
 					<tag>${project.version}</tag>
