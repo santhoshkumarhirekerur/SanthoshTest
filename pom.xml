@@ -13,7 +13,7 @@
 	</scm>
 	<groupId>com.anz</groupId>
 	<artifactId>santhoshtest</artifactId>
-	<version>0.0.16-SNAPSHOT</version>
+	<version>0.0.21-SNAPSHOT</version>
 	<name>SanthoshTest</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
