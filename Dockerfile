@@ -5,6 +5,8 @@ ARG JAR_FILE
 ENV _JAVA_OPTIONS "-Xms256m -Xmx512m -Djava.awt.headless=true"
 
 COPY ${JAR_FILE} /opt/app.jar
+COPY .git /opt/.git
+
 
 RUN addgroup bootapp && \
     adduser -D -S -h /var/cache/bootapp -s /sbin/nologin -G bootapp bootapp
