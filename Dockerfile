@@ -4,6 +4,7 @@ ARG JAR_FILE
 
 ENV _JAVA_OPTIONS "-Xms256m -Xmx512m -Djava.awt.headless=true"
 
+COPY settings.xml ~/.m2/settings.xml
 COPY ${JAR_FILE} /opt/app.jar
 COPY .git /opt/.git
 

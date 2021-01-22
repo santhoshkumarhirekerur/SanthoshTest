@@ -95,8 +95,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<username>santhoshhirekerur</username>
-					<password>${env.DOCKER_HUB_TOKEN}</password>
+					 <useMavenSettingsForAuth>true</useMavenSettingsForAuth>
 					<repository>santhoshhirekerur/com.anz-santhoshtest</repository>
 					<tag>${project.version}</tag>
 					<buildArgs>
