@@ -1,0 +1,39 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: technical-test
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: anz-gitapp-app
+  namespace: technical-test
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 8080
+  selector:
+    app: anz-gitapp-app
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: anz-gitapp-app
+  namespace: technical-test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: anz-gitapp-app
+  template:
+    metadata:
+      labels:
+        app: anz-gitapp-app
+    spec:
+      containers:
+      - name: anz-gitapp-app
+        image: santhoshhirekerur/com.anz-santhoshtest:0.0.34
+        ports:
+        - containerPort: 8080
