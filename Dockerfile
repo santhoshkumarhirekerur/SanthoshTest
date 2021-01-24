@@ -11,7 +11,6 @@ COPY .git /opt/.git
 RUN addgroup bootapp && \
     adduser -D -S -h /var/cache/bootapp -s /sbin/nologin -G bootapp bootapp
 
-
 WORKDIR /opt
 USER bootapp
 ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/opt/app.jar"]
